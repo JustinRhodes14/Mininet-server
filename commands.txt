@@ -14,3 +14,15 @@ r1 ip route add 10.0.0.2 dev r1-eth1
 r1 ip route add 192.168.0.2 dev r1-eth2
 r1 ip route add 10.0.0.4 dev r1-eth3
 r1 ip route add 192.168.0.4 dev r1-eth4
+h1 traceroute 192.168.0.2
+h1 traceroute 10.0.0.4
+h1 traceroute 192.168.0.4
+h2 traceroute 10.0.0.2
+h2 traceroute 10.0.0.4
+h2 traceroute 192.168.0.4
+h3 traceroute 10.0.0.2
+h3 traceroute 192.168.0.2
+h3 traceroute 192.168.0.4
+h4 traceroute 10.0.0.2
+h4 traceroute 192.168.0.2
+h4 traceroute 10.0.0.4
